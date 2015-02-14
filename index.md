@@ -9,7 +9,7 @@ layout: post
 
 * [Windows(x64)](https://drive.google.com/file/d/0B_GPBNtpF5YgalZUMlF3bGIyelE/view?usp=sharing)
   On windows a small pcre.dll is needed because I use Perl regex in my code. I may try to compile it static in the future.
-* [Windows(x86)]() Comming soon.
+* [Windows(x86)]() Comming not so soon since I don't have a 32 bit Windows on my fingers but may in the future.
 * [Linux(x64)](https://drive.google.com/file/d/0B_GPBNtpF5YgYWhSY0FPdUVaelU/view?usp=sharing)
 * [Linux(x86)]() Not commming soon because who use 32bit Linux anyway :P
 * [Linux ARM]() Comming soon.
