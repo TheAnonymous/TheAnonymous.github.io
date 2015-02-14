@@ -5,7 +5,7 @@ layout: post
 # Uploader
 
 ###  Welcome. This is a small and super simple program to share files across the network over HTTP. It is tested on Windows, Linux and Mac but should be compilable to every system where gcc/clang exists. The only thing you have to do is to download it and execute it.
-
+[logo]: "http://theanonymous.github.io/uploader.png"
 
 * [Windows(x64)](https://drive.google.com/file/d/0B_GPBNtpF5YgalZUMlF3bGIyelE/view?usp=sharing)
   On Windows a small pcre.dll is needed because I use Perl regex in my code. I may try to compile it static in the future.
