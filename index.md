@@ -21,6 +21,7 @@ layout: post
 #### There are two options you can use. First is to set a port where where it should serve (i.e. 80 which is the standard HTTP port). Second option is to serve subdirectorys. Here are some examples:
 
 Linux/OSX:
+
 * ./uploader insecure 80
 * ./uploader 80 insecure
 * ./uploader 80
@@ -29,6 +30,7 @@ Linux/OSX:
 Windows:
 
 Copy it where you want it to serve. Then open "cmd" and write
+
 * uploader.exe insecure 80
 * uploader.exe 80 insecure
 * uploader.exe 80
