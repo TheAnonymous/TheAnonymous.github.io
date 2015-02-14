@@ -29,7 +29,7 @@ Linux/OSX:
 
 Windows:
 
-Copy it where you want it to serve. Then open "cmd" and write
+Extract the zip file copy the dll and the exe where you want it to serve. Then open "cmd" and write
 
 * uploader.exe insecure 80
 * uploader.exe 80 insecure
