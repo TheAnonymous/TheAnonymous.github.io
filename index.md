@@ -47,3 +47,7 @@ If you see any bugs please open an issue at my github page.
 LIZENSE: BSD
 
 Thats it have fun.
+
+
+#### PS: If you have a FritzBox (very popular router in Germany) here is small tool for easy opening a port via upnp, so you can use the Uploader tool to share across the internet.
+[UPNP - Tool (Linux x64)](https://drive.google.com/file/d/0B_GPBNtpF5YgNm10ZXp5TnppRFE/view?usp=sharing)
