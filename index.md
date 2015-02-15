@@ -13,7 +13,7 @@ layout: post
 * [Linux(x64)](https://drive.google.com/file/d/0B_GPBNtpF5YgYWhSY0FPdUVaelU/view?usp=sharing)
 * [Linux(x86)]() Not commming soon because who use 32bit Linux anyway :P
 * [Linux ARM/RaspberryPi]() Comming soon.
-* OSX - Comming Soon.
+* [OSX](https://drive.google.com/open?id=0B_GPBNtpF5Ygb0ZwczZMN1FCQ00&authuser=0)
 
 
 [Source on Github](https://github.com/TheAnonymous/Uploader/tree/master)
