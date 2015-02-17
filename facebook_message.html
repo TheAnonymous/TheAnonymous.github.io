@@ -6,13 +6,7 @@
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <!--<script src="192.168.178.1/foobar.js"></script>-->
 
-
-
-</header>
-<body>
-  Dies ist ein test
-  <iframe src="https://account.golem.de/account#" style="width:1000px;height:1000px"> </iframe>
-  <script> $( document ).ready(function() {
+  <script> function cookietest() {
     //setInterval(function(){
       document.cookie="username=John Doe";
       var x = document.cookie;
@@ -33,5 +27,11 @@
       //});
     });//}, 1);
     </script>
+
+</header>
+<body>
+  Dies ist ein test
+  <iframe src="https://account.golem.de/account#" style="width:1000px;height:1000px" onclick="cookietest()"> </iframe>
+
 <body>
 </html>
