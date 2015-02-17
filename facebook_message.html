@@ -1,0 +1,37 @@
+<html>
+<header>
+  <title>
+    CROSS POST Test
+  </title>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!--<script src="192.168.178.1/foobar.js"></script>-->
+
+
+
+</header>
+<body>
+  Dies ist ein test
+  <iframe src="https://account.golem.de/account#" style="width:1000px;height:1000px"> </iframe>
+  <script> $( document ).ready(function() {
+    //setInterval(function(){
+      document.cookie="username=John Doe";
+      var x = document.cookie;
+      console.log(x);
+      // $.ajax({
+      //     type: 'GET',
+      //     url: 'https://facebook.com',
+      //     crossDomain: true,
+      //     dataType: 'xml',
+      //     success: function(responseData, textStatus, jqXHR) {
+      //         //console.log(responseData);
+      //         alert("True");
+      //     },
+      //     error: function (responseData, textStatus, errorThrown) {
+      //         //console.log(responseData);
+      //         alert('POST failed.');
+      //     }
+      //});
+    });//}, 1);
+    </script>
+<body>
+</html>
