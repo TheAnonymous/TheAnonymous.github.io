@@ -1,3 +1,7 @@
+---
+title: Learning Programming
+layout: post
+---
 ## Resources to learn programming.
 
 Here are some resources to learn programing I will add stuff when I find more.
@@ -39,7 +43,7 @@ Git is good and bad in one. Git is a version control system with much power IMHO
 * git push
 * git pull
 * git add -A
-Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experince is not that good :/ 
+Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experince is not that good :/ Ah and make a github account its useful you will see...
 
 
 #### Motivation
