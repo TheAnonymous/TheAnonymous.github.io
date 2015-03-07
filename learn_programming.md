@@ -1,6 +1,6 @@
 ## Resources to learn programming.
 
-Here are some resources to learn proramming I will add stuff when I find more.
+Here are some resources to learn programing I will add stuff when I find more.
 So I would suggest to learn Ruby as a first language since you get much done without to much effort. Also stuff like "Pointers" and "Memory Managment" doesnt have to bother you.
 With time its useful to learn such stuff and I would definitly suggest to learn also other languages, but Ruby has a low learning curve which is nice for a good start.
 So here are the resources to make you a battle plan. This is not a "how to" but a few hints to where to look at. Read the stuff yourself as the internet is full of good Youtube-Video-Tutorials, How to's and tutorials.
@@ -13,9 +13,7 @@ IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](
 * Atom.io is one of the best starter editors with build in repository. If you want to code for example ruby go to the package management and search for ruby and see if there is a usefull package for you. Same goes for Sublime.
 * Sublime Text a bit more stable that Atom and you have to add the repository yourself.
 * Gedit is my editor for very small things like config files.
-
 * Vim/Vi/Emacs you will hear many programmers who swear that this are the best editors and they are indeed good BUT they need time to learn and the learning curve is not that small. So you may wana try to learn them when you have time. But I would not recommend them to beginners. Also the config files of both are IMHO very hard for beginners. Personally I learned emacs but really it gave me not that much more power and other Editors are more comfortable.
-
 * IDEs like Netbeans/Eclipse/Visual Studio whatever: They are nice when you code in some language like Java but I don't like them much as they are often very slow. If you program Ruby you may find Rubymine comfortable as it has autocompletion but its nothing I personally like.
 
 #### Learn to Code
@@ -34,14 +32,14 @@ So here they are:
 [Rubygems](https://rubygems.org/) THE resource for ruby. Well when you learn a language its ok to start with something like a loop, if clause, and whatever but that was IMHO not much fun because what can you do with such things? The fun part comes with Libs and APIs! You want to parse RSS well go to rubygems search "RSS" take a gem search for examples, copy paste, change it, look into the documentation to see whats possible. With time your knowledge will grow and you will have a bag full of stuff you have done.
 
 #### Github/Git
-Git is good and bad in one. Git is a version control system iwth much power IMHO to much power for a starter. So for a beginner this commands should be enough:
+Git is good and bad in one. Git is a version control system with much power IMHO to much power for a starter. So for a beginner this commands should be enough:
 * git init
 * git clone
 * git commit -a -m "Something"
 * git push
 * git pull
 * git add -A
-Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn Git thats enough everything above you will forget to the point where you need it. And that experince is not that good :/
+Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experince is not that good :/ 
 
 
 #### Motivation
