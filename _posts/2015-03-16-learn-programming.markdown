@@ -2,6 +2,7 @@
 title: Learning Programming
 layout: post
 img:  source-code.jpg
+category: personal
 description: How to learn programming. A collection of personal tips.
 ---
 ## Resources to learn programming.
