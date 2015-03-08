@@ -1,7 +1,7 @@
 ---
 title: Uploader a simple way to share files across the network
 layout: default
-img: ipad.png
+img: uploader.png
 category: Services
 description: |
   <p class="lead">A special thanks to <a target="_blank"
