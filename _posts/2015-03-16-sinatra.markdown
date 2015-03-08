@@ -175,7 +175,7 @@ gem install gem install mysql2
 now we have everything installed but we need to create the database and then create a table (btw. a pretty good tutorial for this is [here](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) and [here](https://github.com/brianmario/mysql2) ) so
 
 
-```bash
+```sql
 mysql -u root -p
 
 CREATE DATABASE database foobar;
