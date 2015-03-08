@@ -17,9 +17,13 @@ IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](
 
 #### Editors
 * Atom.io is one of the best starter editors with build in repository. If you want to code for example ruby go to the package management and search for ruby and see if there is a usefull package for you. Same goes for Sublime.
+
 * Sublime Text a bit more stable that Atom and you have to add the repository yourself.
+
 * Gedit is my editor for very small things like config files.
+
 * Vim/Vi/Emacs you will hear many programmers who swear that this are the best editors and they are indeed good BUT they need time to learn and the learning curve is not that small. So you may wana try to learn them when you have time. But I would not recommend them to beginners. Also the config files of both are IMHO very hard for beginners. Personally I learned emacs but really it gave me not that much more power and other Editors are more comfortable.
+
 * IDEs like Netbeans/Eclipse/Visual Studio whatever: They are nice when you code in some language like Java but I don't like them much as they are often very slow. If you program Ruby you may find Rubymine comfortable as it has autocompletion but its nothing I personally like.
 
 #### Learn to Code
