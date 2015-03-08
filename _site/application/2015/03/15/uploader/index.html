@@ -101,85 +101,68 @@
 </div>
 <!-- /.intro-header -->
 
-		<!-- Page Content -->
 
-  
-    
-    <div class="content-section-a">
+		<div class="container">
 
-        <div class="container">
+				<div class="row">
+						<div class="col-lg-12">
+										<h3>Welcome. This is a small and super simple program to share files across the network over HTTP. It is tested on Windows, Linux and Mac but should be compilable to every system where gcc/clang exists. The only thing you have to do is to download it and execute it.</h3>
 
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading"><a href="/application/2015/03/15/uploader/">Uploader a simple way to share files across the network</a></h2>
-                    This is a small and super simple program to share files across the network over HTTP
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/uploader.png" alt="">
-                </div>
-            </div>
+<ul>
+<li><a href="https://drive.google.com/file/d/0B_GPBNtpF5YgalZUMlF3bGIyelE/view?usp=sharing">Windows(x64)</a>
+On Windows a small pcre.dll is needed because I use Perl regex in my code. I may try to compile it static in the future.</li>
+<li><a href="">Windows(x86)</a> Comming not so soon since I don&#39;t have a 32 bit Windows on my fingers but may in the future.</li>
+<li><a href="https://drive.google.com/file/d/0B_GPBNtpF5YgYWhSY0FPdUVaelU/view?usp=sharing">Linux(x64)</a></li>
+<li><a href="">Linux(x86)</a> Not comming soon because who use 32bit Linux anyway :P</li>
+<li><a href="">Linux ARM/RaspberryPi</a> Comming soon.</li>
+<li><a href="https://drive.google.com/open?id=0B_GPBNtpF5Ygb0ZwczZMN1FCQ00&amp;authuser=0">OSX</a></li>
+</ul>
 
-        </div>
-        <!-- /.container -->
+<p><a href="https://github.com/TheAnonymous/Uploader/tree/master">Source on Github</a></p>
 
-    </div>
-    <!-- /.content-section-a -->
-    
+<h4>There are two options you can use. First is to set a port where where it should serve (i.e. 80 which is the standard HTTP port). Second option is to serve subdirectories. Here are some examples:</h4>
 
-  
-    
+<p>Linux/OSX:</p>
 
-    <div class="content-section-b">
+<ul>
+<li>./uploader insecure 80</li>
+<li>./uploader 80 insecure</li>
+<li>./uploader 80</li>
+<li>./uploader insecure</li>
+</ul>
 
-        <div class="container">
+<p>Windows:</p>
 
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading"><a href="/personal/2015/03/16/learn-programming/">Learning Programming</a></h2>
-                    How to learn programming. A collection of personal tips.
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/services/source-code.jpg" alt="">
-                </div>
-            </div>
+<p>Extract the zip file copy the dll and the exe where you want it to serve. Then open &quot;cmd&quot; and write</p>
 
-        </div>
-        <!-- /.container -->
+<ul>
+<li>uploader.exe insecure 80</li>
+<li>uploader.exe 80 insecure</li>
+<li>uploader.exe 80</li>
+<li>uploader.exe insecure</li>
+</ul>
 
-    </div>
-    <!-- /.content-section-b -->
-    
+<h4>As you see pretty basic and it doesn&#39;t matter which order you use</h4>
 
-  
-    
-    <div class="content-section-a">
+<h4>Screenshot:</h4>
 
-        <div class="container">
+<p><img src="http://theanonymous.github.io/img/uploader.png" alt="Screenshot"></p>
 
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading"><a href="/personal/2015/03/16/sinatra/">Web programming with Sinatra</a></h2>
-                    A starting point to web programming with Sinatra.
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/services/sinatra.jpg" alt="">
-                </div>
-            </div>
+<p>If you see any bugs please open an issue at my github page.</p>
 
-        </div>
-        <!-- /.container -->
+<p>LIZENSE: BSD</p>
 
-    </div>
-    <!-- /.content-section-a -->
-    
+<p>Thats it have fun.</p>
 
+<h4>PS: If you have a FritzBox (very popular router in Germany) here is small tool for easy opening a port via upnp, so you can use the Uploader tool to share across the Internet.</h4>
 
+<p><a href="https://drive.google.com/file/d/0B_GPBNtpF5YgNm10ZXp5TnppRFE/view?usp=sharing">UPNP - Tool (Linux x64)</a></p>
+
+								</div>
+						</div>
+				</div>
+
+		</div>
 		<div class="banner">
 
     <div class="container">

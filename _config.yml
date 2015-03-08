@@ -13,7 +13,7 @@ description: Uploader a simple HTTP Server with Up and Download function. Also o
 
 # Build settings
 markdown: redcarpet
-
+highlighter: pygments
 permalink: pretty
 
 # ----------------------- #

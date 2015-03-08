@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Web programming with Sinatra</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/landing-page.css" rel="stylesheet">
+    <link href="/css/github.css" rel="stylesheet">
+    <link href="/css/jekyll-github.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+	<body>
+		<!-- Navigation --><!--
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display --><!--
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Uploader</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling --><!--
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse --><!--
+    </div>
+    <!-- /.container --><!--
+</nav>
+-->
+<!-- Header -->
+<div class="intro-header">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    <h1>Web programming with Sinatra</h1>
+                    <h3></h3>
+                    <hr class="intro-divider">
+                    <ul class="list-inline intro-social-buttons">
+                        
+                        <li>
+                            <a href="https://twitter.com/wildanonymous" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">twitter</span></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/TheAnonymous" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">github</span></a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://plus.google.com/+JakobOesterling/about" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">google-plus</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.intro-header -->
+
+
+		<div class="container">
+
+				<div class="row">
+						<div class="col-lg-12">
+										<h2>Sinatra for the web</h2>
+
+<p>Sinatra is a very very simple Webframework for Ruby. A friend of mine ask me how hard is it to make a web application which reads and writes from a database. Here I will show you how simple it is. This code will not be scalable nor be best practise or something but it will be as simple as possible. You will see you can learn the basics on one day easy.</p>
+
+<h2>Preperation</h2>
+
+<p>To do this tutorial install ruby and and install the Sinatra framework. This can easily doe with:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install ruby
+gem install sinatra
+</code></pre></div>
+<p>easy right?</p>
+
+<h2>Hello World</h2>
+
+<p>So here are the standard &quot;Hello World&quot;.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s2">&quot;sinatra&quot;</span>
+
+<span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="s2">&quot;Hello World&quot;</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Save this as a hello_world.rb and type</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ruby hello_world.rb
+</code></pre></div>
+<p>Thats it its THAT simple! Just go to &quot;http://localhost:4567&quot; and you will see your &quot;Hello World&quot;.
+&quot;Ok that was easy but I want more!&quot;</p>
+
+<p>You probably don&#39;t want everything in this file (remembers me of old PHP times :) )</p>
+
+<p>So make a folder called &quot;views&quot;. There you put a file called &quot;hello<em>world.erb&quot;.
+In this &quot;hello</em>world.erb&quot; we write:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>the Sinatra part we change to:</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">reuqire</span> <span class="s2">&quot;sinatra&quot;</span>
+
+<span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="n">erb</span> <span class="ss">:hello_world</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Not go to your console and close the old server with
+&quot;Strg+C&quot;. Then type again</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ruby hello_world.rb
+</code></pre></div>
+<p>then you should see Your &quot;Hello World&quot; again.
+Now play a bit with the html to see how it changes.
+Till now we only had normal html in the &quot;.erb&quot; file.
+But erb can more! We will now use a variable from Sinatra and will render them in the erb file.</p>
+
+<p>so change the &quot;hello_world.rb&quot; to these</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s2">&quot;sinatra&quot;</span>
+
+<span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="vi">@foo</span> <span class="o">=</span> <span class="s2">&quot;This is some text.&quot;</span>
+  <span class="n">erb</span> <span class="ss">:hello_world</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>and change the &quot;hello_world.erb&quot; to this</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span><span class="err">&lt;</span>%= :foo%&gt;<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>Wow this allows us to do much more!
+Well now it&#39;s time to look how we can receive data from the user/browser.
+For this we need a formula so please change your &quot;.erb&quot; file to this:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello World<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span><span class="err">&lt;</span>%= :foo%&gt;<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">&quot;action_page&quot;</span><span class="nt">&gt;</span>
+      First name:<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;firstname&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;br&gt;</span>
+      Last name:<span class="nt">&lt;br&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;lastname&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>Send<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>Do you see the field  name=&quot;lastname&quot;   ? This do we need later to identify which data from the browser we want to read.
+More information about form fields in html you find <a href="http://www.w3schools.com/html/html_forms.asp">here</a>.</p>
+
+<p>Now to the server part change it to this:</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s2">&quot;sinatra&quot;</span>
+
+<span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="vi">@foo</span> <span class="o">=</span> <span class="s2">&quot;This is some text.&quot;</span>
+  <span class="n">erb</span> <span class="ss">:hello_world</span>
+<span class="k">end</span>
+
+
+<span class="n">get</span> <span class="s2">&quot;/action_page&quot;</span> <span class="k">do</span>
+  <span class="n">foo</span> <span class="o">=</span> <span class="n">params</span><span class="o">[</span><span class="ss">:firstname</span><span class="o">]</span>
+  <span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">foo</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">params</span><span class="o">[</span><span class="ss">:lastname</span><span class="o">]</span>
+  <span class="n">foo</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>and when we execute it and you fill out the form you will see a text like this:</p>
+
+<p>&quot;Hello Peter Pan&quot;</p>
+
+<p>OK thats pretty cool now we can receive data to the user and send data to the user.
+But what if we want to save something? For this normally a database is used. So as the last part I will show you how to read and write from the database.</p>
+
+<h2>Preperation</h2>
+
+<p>So to communicate with the database we need a database driver
+and of course we need to install the database
+we do this with:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">sudo apt-get install mysql-server
+gem install gem install mysql2
+</code></pre></div>
+<p>now we have everything installed but we need to create the database and then create a table (btw. a pretty good tutorial for this is <a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial">here</a> and <a href="https://github.com/brianmario/mysql2">here</a> ) so</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">mysql -u root -p
+
+CREATE DATABASE database foobar<span class="p">;</span>
+
+use foobar
+
+CREATE TABLE users <span class="o">(</span>id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR<span class="o">(</span>20<span class="o">)</span>,
+food VARCHAR<span class="o">(</span>30<span class="o">)</span>,
+confirmed CHAR<span class="o">(</span>1<span class="o">)</span>,
+signup_date DATE<span class="o">)</span><span class="p">;</span>
+
+INSERT INTO <span class="sb">`</span>users<span class="sb">`</span> <span class="o">(</span><span class="sb">`</span>id<span class="sb">`</span>,<span class="sb">`</span>name<span class="sb">`</span>,<span class="sb">`</span>food<span class="sb">`</span>,<span class="sb">`</span>confirmed<span class="sb">`</span>,<span class="sb">`</span>signup_date<span class="sb">`</span><span class="o">)</span> VALUES <span class="o">(</span>NULL, <span class="s2">&quot;John&quot;</span>, <span class="s2">&quot;Casserole&quot;</span>,<span class="s2">&quot;Y&quot;</span>, <span class="s1">&#39;2012-04-11&#39;</span><span class="o">)</span><span class="p">;</span>
+</code></pre></div>
+<p>then we change the server to this</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s2">&quot;sinatra&quot;</span>
+<span class="nb">require</span> <span class="s2">&quot;mysql2&quot;</span>
+
+<span class="n">get</span> <span class="s2">&quot;/&quot;</span> <span class="k">do</span>
+  <span class="n">client</span> <span class="o">=</span> <span class="no">Mysql2</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;root&quot;</span><span class="p">)</span>
+  <span class="vi">@results</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users&quot;</span><span class="p">)</span>
+  <span class="vi">@foo</span> <span class="o">=</span> <span class="s2">&quot;This is some text.</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="vi">@results</span><span class="o">.</span><span class="n">to_s</span>
+  <span class="n">erb</span> <span class="ss">:hello_world</span>
+<span class="k">end</span>
+
+
+<span class="n">get</span> <span class="s2">&quot;/action_page&quot;</span> <span class="k">do</span>
+  <span class="n">client</span> <span class="o">=</span> <span class="no">Mysql2</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:host</span> <span class="o">=&gt;</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span> <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;root&quot;</span><span class="p">)</span>
+  <span class="n">client</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, &#39;</span> <span class="o">+</span> <span class="n">params</span><span class="o">[</span><span class="ss">:firstname</span><span class="o">]</span> <span class="o">+</span> <span class="s1">&#39;, &quot;&#39;</span> <span class="o">+</span> <span class="n">params</span><span class="o">[</span><span class="ss">:lastname</span><span class="o">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;,&quot;Y&quot;, &#39;</span><span class="mi">2012</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">11</span><span class="s1">&#39;)&#39;</span><span class="p">)</span>
+  <span class="n">foo</span> <span class="o">=</span> <span class="n">params</span><span class="o">[</span><span class="ss">:firstname</span><span class="o">]</span>
+  <span class="n">foo</span> <span class="o">=</span> <span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">foo</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">params</span><span class="o">[</span><span class="ss">:lastname</span><span class="o">]</span>
+  <span class="n">foo</span>
+<span class="k">end</span>
+</code></pre></div>
+<p>Now here I should warn you <b>not to program like these in the wild web</b> as its insecure as hell but  for our litte course this ok.
+So now you see how you can insert and read from a database.
+And here we at the end. You have learned the basics now play a bit and read more tutorials. May you identify where I did bad practise. If so try to correct it.
+Try to make it more beautiful with CSS (Sinatra will expect that the CSS is in a folder called public.) digg into it it&#39;s fun!</p>
+
+								</div>
+						</div>
+				</div>
+
+		</div>
+		<div class="banner">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-lg-6">
+                <ul class="list-inline banner-social-buttons">
+                    
+                    <li>
+                        <a href="https://twitter.com/wildanonymous" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">twitter</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://github.com/TheAnonymous" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">github</span></a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://plus.google.com/+JakobOesterling/about" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">google-plus</span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.banner -->
+
+		<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; Uploader All Rights Reserved</p>
+            </div>
+            <div class="col-md-4">
+                Credits: Landing Page is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.
+            </div>
+        </div>
+    </div>
+</footer>
+
+		<!-- jQuery Version 1.11.0 -->
+<script src="/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
