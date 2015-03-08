@@ -30,6 +30,7 @@ get "/" do
   "Hello World"
 end
 ~~~
+{:.language-ruby}
 
 Save this as a hello_world.rb and type
 
