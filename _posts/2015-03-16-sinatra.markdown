@@ -1,0 +1,194 @@
+---
+title: Web programming with Sinatra
+layout: post
+img:  sinatra.jpg
+category: personal
+description: A starting point to web programming with Sinatra.
+---
+## Sinatra for the web
+Sinatra is a very very simple Webframework for Ruby. A friend of mine ask me how hard is it to make a web application which reads and writes from a database. Here I will show you how simple it is. This code will not be scalable nor be best practise or something but it will be as simple as possible. You will see you can learn the basics on one day easy.
+
+## Preperation
+To do this tutorial install ruby and and install the Sinatra framework. This can easily doe with:
+```bash
+sudo apt-get install ruby
+gem install sinatra
+```
+easy right?
+
+
+## Hello World
+So here are the standard "Hello World".
+```ruby
+require "sinatra"
+
+get "/" do
+  "Hello World"
+end
+```
+Save this as a hello_world.rb and type
+```bash
+ruby hello_world.rb
+```
+Thats it its THAT simple! Just go to "http://localhost:4567" and you will see your "Hello World".
+"Ok that was easy but I want more!"
+
+You probably don't want everything in this file (remembers me of old PHP times :) )
+
+So make a folder called "views". There you put a file called "hello_world.erb".
+In this "hello_world.erb" we write:
+
+```html
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <p>Hello World</p>
+  </body>
+</html>
+```
+
+the Sinatra part we change to:
+
+```ruby
+reuqire "sinatra"
+
+get "/" do
+  erb :hello_world
+end
+```
+
+Not go to your console and close the old server with
+"Strg+C". Then type again
+
+```bash
+ruby hello_world.rb
+```
+then you should see Your "Hello World" again.
+Now play a bit with the html to see how it changes.
+Till now we only had normal html in the ".erb" file.
+But erb can more! We will now use a variable from Sinatra and will render them in the erb file.
+
+so change the "hello_world.rb" to these
+```ruby
+require "sinatra"
+
+get "/" do
+  @foo = "This is some text."
+  erb :hello_world
+end
+```
+and change the "hello_world.erb" to this
+```html
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <p><%= :foo%></p>
+    <p>Hello World</p>
+  </body>
+</html>
+```
+Wow this allows us to do much more!
+Well now it's time to look how we can receive data from the user/browser.
+For this we need a formula so please change your ".erb" file to this:
+
+```html
+<html>
+  <head>
+    <title>Hello World</title>
+  </head>
+  <body>
+    <p><%= :foo%></p>
+    <p>Hello World</p>
+    <form action="action_page">
+      First name:<br>
+      <input type="text" name="firstname">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname">
+      <button type="submit">Send</button>
+      </form>
+  </body>
+</html>
+```
+
+Do you see the field  name="lastname"   ? This do we need later to identify which data from the browser we want to read.
+More information about form fields in html you find [here](http://www.w3schools.com/html/html_forms.asp).
+
+Now to the server part change it to this:
+```ruby
+require "sinatra"
+
+get "/" do
+  @foo = "This is some text."
+  erb :hello_world
+end
+
+
+get "/action_page" do
+  foo = params[:firstname]
+  foo = "Hello " + foo + " " + params[:lastname]
+  foo
+end
+```
+
+and when we execute it and you fill out the form you will see a text like this:
+
+"Hello Peter Pan"
+
+OK thats pretty cool now we can receive data to the user and send data to the user.
+But what if we want to save something? For this normally a database is used. So as the last part I will show you how to read and write from the database.
+## Preperation
+So to communicate with the database we need a database driver
+and of course we need to install the database
+we do this with:
+```bash
+sudo apt-get install mysql-server
+gem install gem install mysql2
+```
+
+now we have everything installed but we need to create the database and then create a table (btw. a pretty good tutorial for this is [here](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) and [here](https://github.com/brianmario/mysql2) ) so
+```bash
+mysql -u root -p
+
+CREATE DATABASE database foobar;
+
+use foobar
+
+CREATE TABLE users (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name VARCHAR(20),
+food VARCHAR(30),
+confirmed CHAR(1),
+signup_date DATE);
+
+INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, "John", "Casserole","Y", '2012-04-11');
+```
+
+then we change the server to this
+```ruby
+require "sinatra"
+require "mysql2"
+
+get "/" do
+  client = Mysql2::Client.new(:host => "localhost", :username => "root")
+  @results = client.query("SELECT * FROM users")
+  @foo = "This is some text.\n" + @results.to_s
+  erb :hello_world
+end
+
+
+get "/action_page" do
+  client = Mysql2::Client.new(:host => "localhost", :username => "root")
+  client.query('INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, ' + params[:firstname] + ', "' + params[:lastname] + '","Y", '2012-04-11')')
+  foo = params[:firstname]
+  foo = "Hello " + foo + " " + params[:lastname]
+  foo
+end
+```
+Now here I should warn you <b>not to program like these in the wild web</b> as its insecure as hell but  for our litte course this ok.
+So now you see how you can insert and read from a database.
+And here we at the end. You have learned the basics now play a bit and read more tutorials. May you identify where I did bad practise. If so try to correct it.
+Try to make it more beautiful with CSS (Sinatra will expect that the CSS is in a folder called public.) digg into it it's fun!

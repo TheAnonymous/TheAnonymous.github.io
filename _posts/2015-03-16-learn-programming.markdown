@@ -9,21 +9,21 @@ description: How to learn programming. A collection of personal tips.
 
 Here are some resources to learn programing I will add stuff when I find more.
 So I would suggest to learn Ruby as a first language since you get much done without to much effort. Also stuff like "Pointers" and "Memory Managment" doesnt have to bother you.
-With time its useful to learn such stuff and I would definitly suggest to learn also other languages, but Ruby has a low learning curve which is nice for a good start.
+With time its useful to learn such stuff and I would definitely suggest to learn also other languages, but Ruby has a low learning curve which is nice for a good start.
 So here are the resources to make you a battle plan. This is not a "how to" but a few hints to where to look at. Read the stuff yourself as the internet is full of good Youtube-Video-Tutorials, How to's and tutorials.
 
 #### Linux
 Linux is for beginners the most difficult Operating System possible but its also the most programming focused OS. Also it will help to know Linux when you administrate a server.
-IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](http://antergos.com/) Fedora is easyer at the start but Antegros/Arch is easyer if you want to dig deeper as it provides much software via AURs. So if you want to develope C++, C, Ruby, Python go with Fedora, but if you want to some more unusual like Nim, Elixir, Rust, Go, go with Antegros as its just a AUR away. But be warned don't use to much time to learn Linux it can be a time consuming hobby to learn more and more stuff like set up a Proxy server, Mail server, backup solution and so forth. Do such stuff when you need it but first of all focus on your goal - "learn to code".
+IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](http://antergos.com/) Fedora is easyer at the start but Antegros/Arch is easier if you want to dig deeper as it provides much software via AURs. So if you want to develop C++, C, Ruby, Python go with Fedora, but if you want to some more unusual like Nim, Elixir, Rust, Go, go with Antegros as its just a AUR away. But be warned don't use to much time to learn Linux it can be a time consuming hobby to learn more and more stuff like set up a Proxy server, Mail server, backup solution and so forth. Do such stuff when you need it but first of all focus on your goal - "learn to code".
 
 #### Editors
-* Atom.io is one of the best starter editors with build in repository. If you want to code for example ruby go to the package management and search for ruby and see if there is a usefull package for you. Same goes for Sublime.
+* Atom.io is one of the best starter editors with build in repository. If you want to code for example ruby go to the package management and search for ruby and see if there is a useful package for you. Same goes for Sublime.
 
 * Sublime Text a bit more stable that Atom and you have to add the repository yourself.
 
 * Gedit is my editor for very small things like config files.
 
-* Vim/Vi/Emacs you will hear many programmers who swear that this are the best editors and they are indeed good BUT they need time to learn and the learning curve is not that small. So you may wana try to learn them when you have time. But I would not recommend them to beginners. Also the config files of both are IMHO very hard for beginners. Personally I learned emacs but really it gave me not that much more power and other Editors are more comfortable.
+* Vim/Vi/Emacs you will hear many programmers who swear that this are the best editors and they are indeed good BUT they need time to learn and the learning curve is not that small. So you may wanna try to learn them when you have time. But I would not recommend them to beginners. Also the config files of both are IMHO very hard for beginners. Personally I learned emacs but really it gave me not that much more power and other Editors are more comfortable.
 
 * IDEs like Netbeans/Eclipse/Visual Studio whatever: They are nice when you code in some language like Java but I don't like them much as they are often very slow. If you program Ruby you may find Rubymine comfortable as it has autocompletion but its nothing I personally like.
 
@@ -31,7 +31,7 @@ IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](
 So here they are:
 
 
-[Exercism.io](http://exercism.io/) is excellent to start when you have done your first steps. Basicly you code and other will give you hints how you can make it better. Do one exercise every week and in one year you will be good coder. Really you can read one Book about programming after another but without practice its worthless. You didn't learn riding a bike with reading about - right?
+[Exercism.io](http://exercism.io/) is excellent to start when you have done your first steps. Basically you code and other will give you hints how you can make it better. Do one exercise every week and in one year you will be good coder. Really you can read one Book about programming after another but without practice its worthless. You didn't learn riding a bike with reading about - right?
 
 
 [Rosettacode.org](http://rosettacode.org/wiki/Rosetta_Code) is a good source if you dig into a new language and want to see how to solve a specific problem like reading a file, convert an integer to a string etc.
@@ -54,18 +54,18 @@ Git is good and bad in one. Git is a version control system with much power IMHO
 * git add -A
 
 
-Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experince is not that good :/ Ah and make a github account its useful you will see...
+Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experience is not that good :/ Ah and make a github account its useful you will see...
 
 
 #### Motivation
  * Bugs and mistakes: They are normal nobody will try something to program and it will work from the beginning thats happens very very rarely even if you are a pro. The normal way is to try, see where something went wrong, go further see where the next thing went wrong, fix it and so forth. If it works like intended enjoy and may add features. Thats the normal way of programming. With time you will get a feeling of how to start things, and where are the hard parts of a task. Also normal stuff like a loop which at start are may hard will just work when you get better but then you will have other breaking points...
 
 
-* Travel: Really if you are coder and earn money with it you have much freedome as long as you get the stuff done. I dont know any other job where you can travel around the world and work at the same time (37Signals has programmes which does that). And even if you don't want to travel many companys offers that you can come when you want or work from home. Also there are website where you can find remote work just google for it.
+* Travel: Really if you are coder and earn money with it you have much freedom as long as you get the stuff done. I don't know any other job where you can travel around the world and work at the same time (37Signals has programmers which does that). And even if you don't want to travel many companies offers that you can come when you want or work from home. Also there are website where you can find remote work just google for it.
 
 * Money: Well everyone needs money to live but coding often not only offers you enough to live but enough to live comfortable. Even if you don't work at Google or Facebook you will normally(!) never have a money problem again (At least if you are good with money...).
 
-* Save everything: Seriously save every piece of code you have with a descriptional name. You will ofter solve a problem and a year later have the same or only a slightly different problem to solve. Than its good when you find the old soloution and only have to make small changes.
+* Save everything: Seriously save every piece of code you have with a descriptional name. You will ofter solve a problem and a year later have the same or only a slightly different problem to solve. Than its good when you find the old solution and only have to make small changes.
 
 #### Copy & Paste
 Copy and paste from websites like stack overflow or the official documentation are ok even pros does that. BUT try as hard as you can to understand it. May not all at once but with time. But NEVER! write a program where you have copy/paste code in it which you don't understand and say its finished (well if its just for fun its not that critical but as soon as you write code for others this an absolute NO GO!).
@@ -87,12 +87,12 @@ Use both one time may in a play project. At first you will think like "Where do 
 
 
 #### Multithreading
-Many programmers have a huge respect for multicore programming. This doesn't come from nothing BUT today there are tools which makes threading much easyer than C++1988 !
+Many programmers have a huge respect for multi core programming. This doesn't come from nothing BUT today there are tools which makes threading much easier than C++1988 !
 Learn:
 
-* Why functional programming make it much easyer
+* Why functional programming make it much easier
 
-* Difference between paralleslism and concurrency
+* Difference between parallelism and concurrency
 
 * Deadlocks
 
