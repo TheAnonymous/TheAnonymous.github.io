@@ -118,7 +118,7 @@ For this we need a formula so please change your ".erb" file to this:
     <title>Hello World</title>
   </head>
   <body>
-    <p><%= :foo%></p>
+    <p><%= @foo%></p>
     <p>Hello World</p>
     <form action="action_page">
       First name:<br>
