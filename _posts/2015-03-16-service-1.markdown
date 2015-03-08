@@ -2,7 +2,7 @@
 title: Learning Programming
 layout: default
 permalink: learn_programming.html
-img:  source_code.jpg
+img:  source-code.jpg
 ---
 ## Resources to learn programming.
 
