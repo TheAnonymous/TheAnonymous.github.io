@@ -1,6 +1,6 @@
 ---
 title: Learning Programming
-layout: default
+layout: post
 permalink: learn_programming.html
 img:  source-code.jpg
 description: How to learn programming. A collection of personal tips.
