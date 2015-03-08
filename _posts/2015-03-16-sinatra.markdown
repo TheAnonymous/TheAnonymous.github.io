@@ -10,15 +10,19 @@ Sinatra is a very very simple Webframework for Ruby. A friend of mine ask me how
 
 ## Preperation
 To do this tutorial install ruby and and install the Sinatra framework. This can easily doe with:
+
 ```bash
 sudo apt-get install ruby
 gem install sinatra
 ```
+
+
 easy right?
 
 
 ## Hello World
 So here are the standard "Hello World".
+
 ```ruby
 require "sinatra"
 
@@ -26,10 +30,13 @@ get "/" do
   "Hello World"
 end
 ```
+
 Save this as a hello_world.rb and type
+
 ```bash
 ruby hello_world.rb
 ```
+
 Thats it its THAT simple! Just go to "http://localhost:4567" and you will see your "Hello World".
 "Ok that was easy but I want more!"
 
@@ -65,12 +72,15 @@ Not go to your console and close the old server with
 ```bash
 ruby hello_world.rb
 ```
+
 then you should see Your "Hello World" again.
 Now play a bit with the html to see how it changes.
 Till now we only had normal html in the ".erb" file.
 But erb can more! We will now use a variable from Sinatra and will render them in the erb file.
 
 so change the "hello_world.rb" to these
+
+
 ```ruby
 require "sinatra"
 
@@ -79,7 +89,11 @@ get "/" do
   erb :hello_world
 end
 ```
+
+
 and change the "hello_world.erb" to this
+
+
 ```html
 <html>
   <head>
@@ -91,9 +105,12 @@ and change the "hello_world.erb" to this
   </body>
 </html>
 ```
+
+
 Wow this allows us to do much more!
 Well now it's time to look how we can receive data from the user/browser.
 For this we need a formula so please change your ".erb" file to this:
+
 
 ```html
 <html>
@@ -119,6 +136,9 @@ Do you see the field  name="lastname"   ? This do we need later to identify whic
 More information about form fields in html you find [here](http://www.w3schools.com/html/html_forms.asp).
 
 Now to the server part change it to this:
+
+
+
 ```ruby
 require "sinatra"
 
@@ -145,12 +165,16 @@ But what if we want to save something? For this normally a database is used. So 
 So to communicate with the database we need a database driver
 and of course we need to install the database
 we do this with:
+
+
 ```bash
 sudo apt-get install mysql-server
 gem install gem install mysql2
 ```
 
 now we have everything installed but we need to create the database and then create a table (btw. a pretty good tutorial for this is [here](https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial) and [here](https://github.com/brianmario/mysql2) ) so
+
+
 ```bash
 mysql -u root -p
 
@@ -168,6 +192,8 @@ INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL,
 ```
 
 then we change the server to this
+
+
 ```ruby
 require "sinatra"
 require "mysql2"
@@ -188,6 +214,8 @@ get "/action_page" do
   foo
 end
 ```
+
+
 Now here I should warn you <b>not to program like these in the wild web</b> as its insecure as hell but  for our litte course this ok.
 So now you see how you can insert and read from a database.
 And here we at the end. You have learned the basics now play a bit and read more tutorials. May you identify where I did bad practise. If so try to correct it.
