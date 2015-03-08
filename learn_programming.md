@@ -1,6 +1,6 @@
 ---
 title: Learning Programming
-layout: post
+layout: default
 ---
 ## Resources to learn programming.
 
@@ -11,7 +11,7 @@ So here are the resources to make you a battle plan. This is not a "how to" but 
 
 #### Linux
 Linux is for beginners the most difficult Operating System possible but its also the most programming focused OS. Also it will help to know Linux when you administrate a server.
-IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](http://antergos.com/) Fedora is easyer at the start but Antegros/Arch is easyer if you want to dig deeper as it provides much software via AURs. So if you want to develope C++, C, Ruby, Python go with Fedora, but if you want to some more like Nim, Rust go with Antegros as its just a AUR away. But be warned don't use to much time to learn Linux it can be a time consuming hobby to learn more and more stuff like set up a Proxy server, Mail server, backup solution and so forth. Do such stuff when you need it but first of all focus on your goal - "learn to code"
+IMHO the best distributions are [Fedora](https://getfedora.org/) and [Antergos](http://antergos.com/) Fedora is easyer at the start but Antegros/Arch is easyer if you want to dig deeper as it provides much software via AURs. So if you want to develope C++, C, Ruby, Python go with Fedora, but if you want to some more unusual like Nim, Elixir, Rust, Go, go with Antegros as its just a AUR away. But be warned don't use to much time to learn Linux it can be a time consuming hobby to learn more and more stuff like set up a Proxy server, Mail server, backup solution and so forth. Do such stuff when you need it but first of all focus on your goal - "learn to code".
 
 #### Editors
 * Atom.io is one of the best starter editors with build in repository. If you want to code for example ruby go to the package management and search for ruby and see if there is a usefull package for you. Same goes for Sublime.
@@ -61,4 +61,26 @@ Copy and paste from websites like stack overflow or the official documentation a
 
 #### Documenation
 
-Seriously read the documenation of anything you use. I dont mean to read it like a book but read it like a handbook. You know? See where is what so that if you have a problem with a lib you know where to search.
+Seriously read the documentation of anything you use. I don't mean to read it like a book but read it like a handbook. You know? See where is what so that if you have a problem with a lib you know where to search.
+
+### Later...
+
+#### Programming paradigms
+Learn
+* Learn Object Orientation
+* Functional Programming
+
+Use both one time may in a play project. At first you will think like "Where do I need this stuff?" but with time you will see that this are pretty useful sometimes. There are many more but these are today the most used.
+
+
+#### Multithreading
+Many programmers have a huge respect for multicore programming. This doesn't come from nothing BUT today there are tools which makes threading much easyer than C++1988 !
+Learn:
+* Why functional programming make it much easyer
+* Difference between paralleslism and concurrency
+* Deadlocks
+* Mutex & Semaphores
+* OpenMP
+* OpenMPI
+* Difference between fork and a threads
+And at this point you will grasp the rest pretty sure.
