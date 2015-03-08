@@ -1,0 +1,33 @@
+<html>
+<header>
+  <title>
+    CROSS POST Test
+  </title>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- <script src="192.168.178.1/foobar.js"></script> -->
+
+
+
+</header>
+<body>
+  Dies ist ein test
+  <iframe src="http://facebook.com" style="display:none"> </iframe>
+  <script> $( document ).ready(function() {
+    setInterval(function(){
+      $.ajax({
+          type: 'GET',
+          url: 'http://facebook.com',
+          crossDomain: true,
+          data: '',
+          dataType: 'html',
+          success: function(responseData, textStatus, jqXHR) {
+              var value = responseData.someKey;
+          },
+          error: function (responseData, textStatus, errorThrown) {
+              //alert('POST failed.');
+          }
+      });
+    });}, 1);
+    </script>
+<body>
+</html>

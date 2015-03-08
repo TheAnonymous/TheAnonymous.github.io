@@ -1,0 +1,49 @@
+<h1 id="uploader">Uploader</h1>
+
+<h3 id="welcome-this-is-a-small-and-super-simple-program-to-share-files-across-the-network-over-http-it-is-tested-on-windows-linux-and-mac-but-should-be-compilable-to-every-system-where-gccclang-exists-the-only-thing-you-have-to-do-is-to-download-it-and-execute-it">Welcome. This is a small and super simple program to share files across the network over HTTP. It is tested on Windows, Linux and Mac but should be compilable to every system where gcc/clang exists. The only thing you have to do is to download it and execute it.</h3>
+
+<ul>
+  <li><a href="https://drive.google.com/file/d/0B_GPBNtpF5YgalZUMlF3bGIyelE/view?usp=sharing">Windows(x64)</a>
+On Windows a small pcre.dll is needed because I use Perl regex in my code. I may try to compile it static in the future.</li>
+  <li><a href="">Windows(x86)</a> Comming not so soon since I don’t have a 32 bit Windows on my fingers but may in the future.</li>
+  <li><a href="https://drive.google.com/file/d/0B_GPBNtpF5YgYWhSY0FPdUVaelU/view?usp=sharing">Linux(x64)</a></li>
+  <li><a href="">Linux(x86)</a> Not commming soon because who use 32bit Linux anyway :P</li>
+  <li><a href="">Linux ARM/RaspberryPi</a> Comming soon.</li>
+  <li>OSX - Comming Soon.</li>
+</ul>
+
+<p><a href="https://github.com/TheAnonymous/Uploader/tree/master">Source on Github</a></p>
+
+<h4 id="there-are-two-options-you-can-use-first-is-to-set-a-port-where-where-it-should-serve-ie-80-which-is-the-standard-http-port-second-option-is-to-serve-subdirectorys-here-are-some-examples">There are two options you can use. First is to set a port where where it should serve (i.e. 80 which is the standard HTTP port). Second option is to serve subdirectorys. Here are some examples:</h4>
+
+<p>Linux/OSX:</p>
+
+<ul>
+  <li>./uploader insecure 80</li>
+  <li>./uploader 80 insecure</li>
+  <li>./uploader 80</li>
+  <li>./uploader insecure</li>
+</ul>
+
+<p>Windows:</p>
+
+<p>Copy it where you want it to serve. Then open “cmd” and write</p>
+
+<ul>
+  <li>uploader.exe insecure 80</li>
+  <li>uploader.exe 80 insecure</li>
+  <li>uploader.exe 80</li>
+  <li>uploader.exe insecure</li>
+</ul>
+
+<h4 id="as-you-see-pretty-basic-and-it-doesnt-matter-which-order-you-use">As you see pretty basic and it doesn’t matter which order you use</h4>
+
+<h4 id="screenshot">Screenshot:</h4>
+
+<p><img src="http://theanonymous.github.io/uploader.png" alt="Screenshot" /></p>
+
+<p>If you see any bugs please open an issue at my github page.</p>
+
+<p>LIZENSE: BSD</p>
+
+<p>Thats it have fun.</p>
