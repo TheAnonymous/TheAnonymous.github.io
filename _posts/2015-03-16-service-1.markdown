@@ -3,7 +3,7 @@ title: Learning Programming
 layout: default
 permalink: learn_programming.html
 img:  source-code.jpg
-description: How to learn programming
+description: How to learn programming. A collection of personal tips.
 ---
 ## Resources to learn programming.
 
