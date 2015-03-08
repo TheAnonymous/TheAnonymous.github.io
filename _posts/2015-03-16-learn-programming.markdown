@@ -39,12 +39,16 @@ So here they are:
 
 #### Github/Git
 Git is good and bad in one. Git is a version control system with much power IMHO to much power for a starter. So for a beginner this commands should be enough:
+
+
 * git init
 * git clone
 * git commit -a -m "Something"
 * git push
 * git pull
 * git add -A
+
+
 Of course you can do a lot more with BUT learn as you need it! These commands will bring you to your goal at the start and thats enough. If you spended a evening to learn this Git commands thats enough everything above you will forget to the point where you need it. And that experince is not that good :/ Ah and make a github account its useful you will see...
 
 
@@ -69,7 +73,9 @@ Seriously read the documentation of anything you use. I don't mean to read it li
 
 #### Programming paradigms
 Learn
+
 * Learn Object Orientation
+
 * Functional Programming
 
 Use both one time may in a play project. At first you will think like "Where do I need this stuff?" but with time you will see that this are pretty useful sometimes. There are many more but these are today the most used.
@@ -78,11 +84,19 @@ Use both one time may in a play project. At first you will think like "Where do 
 #### Multithreading
 Many programmers have a huge respect for multicore programming. This doesn't come from nothing BUT today there are tools which makes threading much easyer than C++1988 !
 Learn:
+
 * Why functional programming make it much easyer
+
 * Difference between paralleslism and concurrency
+
 * Deadlocks
+
 * Mutex & Semaphores
+
 * OpenMP
+
 * OpenMPI
+
 * Difference between fork and a threads
+
 And at this point you will grasp the rest pretty sure.
