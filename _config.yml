@@ -5,10 +5,7 @@
 url: http://theanonymous.github.io
 title: Uploader
 email: battleman2004 AT gmail.com
-description: > # "Write an awesome description for your new site here. 
-  You can edit this line in _config.yml. It will appear in your document 
-  head meta (for Google search results) and in your feed.xml site 
-  description."
+description: Uploader a simple HTTP Server with Up and Download function. Also other personal blog posts.
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -27,4 +24,5 @@ social:
     url: https://twitter.com/wildanonymous
   - title: github
     url: https://github.com/TheAnonymous
-
+  -title: G+
+    url: https://plus.google.com/+JakobOesterling/about
