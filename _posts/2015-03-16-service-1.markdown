@@ -1,6 +1,7 @@
 ---
 title: Learning Programming
 layout: default
+permalink: learn_programming.html
 ---
 ## Resources to learn programming.
 
