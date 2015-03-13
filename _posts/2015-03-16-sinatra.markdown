@@ -12,7 +12,7 @@ Sinatra is a very very simple Webframework for Ruby. A friend of mine ask me how
 To do this tutorial install ruby and and install the Sinatra framework. This can easily doe with:
 
 ```bash
-sudo apt-get install ruby
+sudo apt-get install ruby ruby-dev libmysqlclient-dev
 gem install sinatra
 ```
 
@@ -199,7 +199,7 @@ require "sinatra"
 require "mysql2"
 
 get "/" do
-  client = Mysql2::Client.new(:host => "localhost", :username => "root")
+  client = Mysql2::Client.new(:host => "localhost", :username => "root", :database => "foobar")
   @results = client.query("SELECT * FROM users")
   @foo = "This is some text.\n" + @results.to_s
   erb :hello_world
@@ -207,8 +207,8 @@ end
 
 
 get "/action_page" do
-  client = Mysql2::Client.new(:host => "localhost", :username => "root")
-  client.query('INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, ' + params[:firstname] + ', "' + params[:lastname] + '","Y", '2012-04-11')')
+  client = Mysql2::Client.new(:host => "localhost", :username => "root", :database => "foobar")
+  client.query('INSERT INTO `users` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, "' + params[:firstname] + '", "' + params[:lastname] + '","Y", "2012-04-11")')
   foo = params[:firstname]
   foo = "Hello " + foo + " " + params[:lastname]
   foo
