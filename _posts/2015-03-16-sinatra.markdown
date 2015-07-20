@@ -216,7 +216,7 @@ end
 ```
 
 
-Now here I should warn you <b>not to program like these in the wild web</b> as its insecure as hell but  for our litte course this ok.
+Now here I should warn you <b>not to program like these in the wild web</b> as its insecure as hell but  for our litte course this is ok.
 So now you see how you can insert and read from a database.
 And here we at the end. You have learned the basics now play a bit and read more tutorials. May you identify where I did bad practise. If so try to correct it.
 Try to make it more beautiful with CSS (Sinatra will expect that the CSS is in a folder called public.) digg into it it's fun!
